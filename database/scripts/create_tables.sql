@@ -74,7 +74,6 @@ CREATE TABLE IF NOT EXISTS log (
   timestamp timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
--- CREATE VIEW occurrence + specimen + location + collection
 CREATE OR REPLACE VIEW occurrence_specimen_location_collection AS
 SELECT
   o.occurrence_id,
